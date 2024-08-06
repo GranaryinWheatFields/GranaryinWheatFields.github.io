@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>tkinter.filedialog | 技术文档工程师修炼</title><meta name="author" content="李肇阳 | Zhaoyang Li"><meta name="copyright" content="李肇阳 | Zhaoyang Li"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="简介tkinter.filedialog 模块提供了与文件和文件夹对话框有关的函数，用于在 GUI 应用程序中让用户选择文件和文件夹。以下是一些常用的 tkinter.filedialog 函数：让我们更详细地了解 tkinter.filedialog 模块中的每个主要函数： 1. askopenfilename123from tkinter import filedialogfile_path">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tkinter.filedialog">
+<meta property="og:url" content="http://example.com/2023/10/31/python-scripts/filedialog/index.html">
+<meta property="og:site_name" content="技术文档工程师修炼">
+<meta property="og:description" content="简介tkinter.filedialog 模块提供了与文件和文件夹对话框有关的函数，用于在 GUI 应用程序中让用户选择文件和文件夹。以下是一些常用的 tkinter.filedialog 函数：让我们更详细地了解 tkinter.filedialog 模块中的每个主要函数： 1. askopenfilename123from tkinter import filedialogfile_path">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-10-31T07:23:46.000Z">
+<meta property="article:modified_time" content="2024-07-31T09:53:54.222Z">
+<meta property="article:author" content="李肇阳 | Zhaoyang Li">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/10/31/python-scripts/filedialog/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'tkinter.filedialog',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-31 17:53:54'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="//"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="技术文档工程师修炼"><span class="site-name">技术文档工程师修炼</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="//"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">tkinter.filedialog</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-31T07:23:46.000Z" title="发表于 2023-10-31 15:23:46">2023-10-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-31T09:53:54.222Z" title="更新于 2024-07-31 17:53:54">2024-07-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/">Python学习与实践</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">学习总结</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="tkinter.filedialog"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p><code>tkinter.filedialog</code> 模块提供了与文件和文件夹对话框有关的函数，用于在 GUI 应用程序中让用户选择文件和文件夹。以下是一些常用的 <code>tkinter.filedialog</code> 函数：<br>让我们更详细地了解 <code>tkinter.filedialog</code> 模块中的每个主要函数：</p>
+<h3 id="1-askopenfilename"><a href="#1-askopenfilename" class="headerlink" title="1. askopenfilename"></a>1. <code>askopenfilename</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> filedialog</span><br><span class="line"></span><br><span class="line">file_path = filedialog.askopenfilename(title=<span class="string">&quot;Select a file&quot;</span>, filetypes=[(<span class="string">&quot;Text files&quot;</span>, <span class="string">&quot;*.txt&quot;</span>), (<span class="string">&quot;All files&quot;</span>, <span class="string">&quot;*.*&quot;</span>)])</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong><code>title</code>：</strong> 对话框标题。</p>
+</li>
+<li><p><strong><code>filetypes</code>：</strong> 可选文件类型，以元组列表的形式提供。每个元组包含两个值：文件类型的描述和对应的文件扩展名。用户只能选择指定类型的文件。</p>
+</li>
+<li><p><strong>返回值：</strong> 所选文件的路径。</p>
+</li>
+</ul>
+<h3 id="2-askopenfilenames"><a href="#2-askopenfilenames" class="headerlink" title="2. askopenfilenames"></a>2. <code>askopenfilenames</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> filedialog</span><br><span class="line"></span><br><span class="line">files = filedialog.askopenfilenames(title=<span class="string">&quot;Select files&quot;</span>, filetypes=[(<span class="string">&quot;Text files&quot;</span>, <span class="string">&quot;*.txt&quot;</span>), (<span class="string">&quot;All files&quot;</span>, <span class="string">&quot;*.*&quot;</span>)])</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong><code>title</code>：</strong> 对话框标题。</p>
+</li>
+<li><p><strong><code>filetypes</code>：</strong> 可选文件类型，以元组列表的形式提供。每个元组包含两个值：文件类型的描述和对应的文件扩展名。用户可以选择多个文件。</p>
+</li>
+<li><p><strong>返回值：</strong> 所选多个文件的路径，以元组形式返回。</p>
+</li>
+</ul>
+<h3 id="3-asksaveasfilename"><a href="#3-asksaveasfilename" class="headerlink" title="3. asksaveasfilename"></a>3. <code>asksaveasfilename</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> filedialog</span><br><span class="line"></span><br><span class="line">file_path = filedialog.asksaveasfilename(defaultextension=<span class="string">&quot;.txt&quot;</span>, filetypes=[(<span class="string">&quot;Text files&quot;</span>, <span class="string">&quot;*.txt&quot;</span>), (<span class="string">&quot;All files&quot;</span>, <span class="string">&quot;*.*&quot;</span>)])</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong><code>defaultextension</code>：</strong> 如果用户未指定扩展名，使用的默认扩展名。</p>
+</li>
+<li><p><strong><code>filetypes</code>：</strong> 可选文件类型，以元组列表的形式提供。每个元组包含两个值：文件类型的描述和对应的文件扩展名。</p>
+</li>
+<li><p><strong>返回值：</strong> 用户选择的文件路径用于保存。</p>
+</li>
+</ul>
+<h3 id="4-askdirectory"><a href="#4-askdirectory" class="headerlink" title="4. askdirectory"></a>4. <code>askdirectory</code></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> filedialog</span><br><span class="line"></span><br><span class="line">folder_path = filedialog.askdirectory(title=<span class="string">&quot;Select a folder&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong><code>title</code>：</strong> 对话框标题。</p>
+</li>
+<li><p><strong>返回值：</strong> 所选文件夹的路径。</p>
+</li>
+</ul>
+</article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/10/31/python-scripts/exercise-filedialog/" title="一个选择文件并显示路径的GUI"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">一个选择文件并显示路径的GUI</div></div></a></div><div class="next-post pull-right"><a href="/2023/10/31/python-scripts/image-more-links/" title="在图片的不同区域增加不同的超链接"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">在图片的不同区域增加不同的超链接</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">李肇阳 | Zhaoyang Li</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-askopenfilename"><span class="toc-number">1.0.1.</span> <span class="toc-text">1. askopenfilename</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-askopenfilenames"><span class="toc-number">1.0.2.</span> <span class="toc-text">2. askopenfilenames</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-asksaveasfilename"><span class="toc-number">1.0.3.</span> <span class="toc-text">3. asksaveasfilename</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-askdirectory"><span class="toc-number">1.0.4.</span> <span class="toc-text">4. askdirectory</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By 李肇阳 | Zhaoyang Li</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

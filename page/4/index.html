@@ -1,0 +1,329 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>技术文档工程师修炼</title><meta name="author" content="李肇阳 | Zhaoyang Li"><meta name="copyright" content="李肇阳 | Zhaoyang Li"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="技术文档工程师修炼">
+<meta property="og:url" content="http://example.com/page/4/index.html">
+<meta property="og:site_name" content="技术文档工程师修炼">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="李肇阳 | Zhaoyang Li">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/4/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '技术文档工程师修炼',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-08-06 14:49:13'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="//"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="技术文档工程师修炼"><span class="site-name">技术文档工程师修炼</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="//"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">技术文档工程师修炼</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/31/writing-throry/style/" title="Easy to understand- Style">Easy to understand- Style</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-31T07:23:46.000Z" title="发表于 2023-10-31 15:23:46">2023-10-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%99%E4%BD%9C%E7%90%86%E8%AE%BA%E5%8F%82%E8%80%83/">中文技术文档的写作理论参考</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/10/writing-throry/manual-architecture/" title="文档架构">文档架构</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta-separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-09T16:00:00.000Z" title="发表于 2023-10-10 00:00:00">2023-10-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%A3/">关于产品文档</a></span></div><div class="content">Diátaxis 是一种思考和创作文档的方式。
+Diátaxis 解决与文档内容（写什么）、风格（如何写）和架构（如何组织）相关的问题。
+
+教程 - 学习导向
+教程是一种课程，通过一系列的步骤引导读者完成某个项目。
+旨在帮助初学者掌握特定技能或概念。
+提供详细的指导，通常包括示例、演示和互动元素，以促进读者的实际学习体验。
+
+操作指南 - 任务导向
+操作指南提供了解决现实世界问题所需步骤的指南。
+侧重于帮助用户达到特定目标，如完成某项任务或解决具体问题。
+提供明确的步骤和操作建议，以使用户能够迅速、准确地执行特定任务。
+
+参考 - 信息导向
+参考指南描述产品和操作产品的技术细节。
+提供深入的技术描述、规范和详细的产品信息。
+可包括 API 文档、配置选项、参数说明等，以满足用户对产品内部工作原理的深入了解。
+
+解释 - 理解导向
+解释是对特定主题进行深入讨论，澄清和照亮相关概念。
+目的是帮助读者更深入地理解产品、技术或相关主题。
+可包括概念解释、背景知识、原理说明等，以满足用户对更广泛知识领域的渴望。
+
+注: 更多详细内容可参考 https://librehugohu.github.i ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/10/writing-throry/manual-type/" title="文档类型">文档类型</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta-separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-09T16:00:00.000Z" title="发表于 2023-10-10 00:00:00">2023-10-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%A3/">关于产品文档</a></span></div><div class="content">文档具体的类型：
+产品和手册介绍
+产品的简要概述和目标受众。
+说明手册的结构和如何使用手册。
+
+安装和配置
+详细说明如何安装和配置产品。
+确保用户能够迅速开始使用产品。
+
+入门指南
+提供初次使用产品时的简明步骤。
+强调核心功能，帮助用户快速上手。
+
+界面导览
+描述产品界面的各个部分和元素。
+提供界面截图，帮助用户了解产品布局。
+
+功能说明
+对产品的各项功能进行详细说明。
+包括每个功能的用途和操作步骤。
+
+常见问题解答
+收集并回答用户可能遇到的常见问题。
+提供解决方案和问题排查建议。
+
+故障排除
+提供针对常见问题的详细故障排除指南。
+包括错误消息的解释和解决方法。
+
+技术支持信息
+提供获取技术支持的途径，如联系信息、在线支持等。
+
+更新日志
+列出产品的版本历史和更新内容。
+帮助用户了解产品的演变和改进。
+
+术语表
+解释产品中使用的专业术语和缩略语。
+有助于用户理解文档中的技术术语。
+
+安全信息
+针对某些产品，提供使用时的安全注意事项。
+包括警告、禁止事项等信息。
+
+法律声明
+包括关于产品使用的法律责任和免责声明。
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/10/writing-throry/manual-value/" title="文档价值">文档价值</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta-separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-09T16:00:00.000Z" title="发表于 2023-10-10 00:00:00">2023-10-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%A3/">关于产品文档</a></span></div><div class="content">提高产品价值文档作为产品的一部分，可以为用户提供详细的信息，帮助他们更好地理解和使用产品。清晰、易懂的文档能够降低用户的学习成本，提高他们的满意度，从而间接地提高了产品的整体价值。
+释放产品潜力好的文档不仅仅是功能列表，还应提供实际的使用场景、最佳实践和操作步骤。通过指导用户如何充分利用产品功能，文档可以帮助用户发现产品的潜在价值，实现更高效的工作流程。
+建立客户信心用户通常通过文档来了解产品的专业性和质量水平。清晰、准确、完善的文档传递了一种专业和用心的形象，这有助于建立用户对产品的信心，并提高他们的满意度。
+推动销售在商业环境中，文档和支持的质量直接影响购买决策。有充分文档支持的产品通常更容易被市场接受，而用户在购买前也更愿意选择有详尽文档的产品，因为这意味着他们在使用过程中能够得到更好的支持。
+减轻客户支持负担即使最完善的产品也难免有用户需要帮助的时候。通过提供清晰、全面、简洁的文档，您可以使用户更容易自己找到解决问题的方法，从而减轻客户支持团队的工作负担，提高整体效率。
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/10/writing-throry/workflow/" title="文档项目流程概述">文档项目流程概述</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta-separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-09T16:00:00.000Z" title="发表于 2023-10-10 00:00:00">2023-10-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%A3/">关于产品文档</a></span></div><div class="content">
+1.需求分析需求分析是指对搜集来的需求和信息进行详细的归纳和分析。
+需求有两个来源，一个是由内而外的需求，即公司想呈现哪些内容给用户；另一个是由外而内的需求，即用户想看到哪些内容。
+2.文档架构设计文档架构设计是为了让用户以最方便的方式获取所需信息，解决问题。
+在设计文档架构之前，建议先研究竞品资料，总结其结构和内容。根据竞品和需求，设计出一版文档架构，并通过相关人员评审，逐步迭代至最终版本。这一阶段的目标是确保文档结构合理，能够满足用户和公司的需求。
+3.写作写作阶段是按照设计好的文档架构，遵循文档写作规范和理论进行内容编写的过程。
+需要根据文档的结构，有条不紊地填充内容。关注清晰度、简洁性和准确性，确保文档能够有效地传达信息。
+4.质量控制质量控制是检查文档的正确性、一致性和完整性。
+文档也是产品，此阶段需要产品、研发、测试、文档共同参与文档的测试、审核和验证。
+5.发布发布是将文档进行包装，根据需要将源内容转换成WORD、PDF或HTML。
+在发布之前，确保文档已经经过充分的质量控制，并且符合发布标准。
+6.交付交付是文档包装完成后，将文档交付到用户手中的过程。确保交付的文档能 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/20/writing-throry/title/" title="标题">标题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-20T07:23:46.000Z" title="发表于 2023-09-20 15:23:46">2023-09-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%84%E8%8C%83%E5%8F%82%E8%80%83/">中文技术文档的写作规范参考</a></span></div><div class="content">标题层级标题分为四级。
+
+一级标题：文章的标题
+二级标题：文章主要部分的大标题
+三级标题：二级标题下面一级的小标题
+四级标题：三级标题下面某一方面的小标题
+
+下面是示例。
+1234567# 一级标题## 二级标题### 三级标题#### 四级标题
+
+原则（1）一级标题下，不能直接出现三级标题。
+示例：下面的文章结构，缺少二级标题。
+123# 一级标题### 三级标题
+
+（2）标题要避免孤立编号（即同级标题只有一个）。
+示例：下面的文章结构，二级标题 A只包含一个三级标题，完全可以省略三级标题 A。
+12345## 二级标题 A### 三级标题 A## 二级标题 B
+
+（3）下级标题不重复上一级标题的名字。
+示例：下面的文章结构，二级标题与下属的三级标题同名，建议避免。
+123## 概述### 概述
+
+（4）谨慎使用四级标题，尽量避免出现，保持层级的简单，防止出现过于复杂的章节。
+如果三级标题下有并列性的内容，建议只使用项目列表（Item list）。
+示例：下面的结构二要好于结构一。结构一适用的场景，主要是较长篇幅的内容。
+12345678910111213141516171819结构 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/19/writing-throry/text/" title="文本">文本</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-19T07:23:46.000Z" title="发表于 2023-09-19 15:23:46">2023-09-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%84%E8%8C%83%E5%8F%82%E8%80%83/">中文技术文档的写作规范参考</a></span></div><div class="content">文本字间距（1）全角中文字符与半角英文字符之间，应有一个半角空格。
+123错误：本文介绍如何快速启动Windows系统。正确：本文介绍如何快速启动 Windows 系统。
+
+（2）全角中文字符与半角阿拉伯数字之间，有没有半角空格都可，但必须保证风格统一，不能两种风格混杂。
+123正确：2011年5月15日，我订购了5台笔记本电脑与10台平板电脑。正确：2011 年 5 月 15 日，我订购了 5 台笔记本电脑与 10 台平板电脑。
+
+半角的百分号，视同阿拉伯数字。
+123正确：今年我国经济增长率是6.5%。正确：今年我国经济增长率是 6.5%。
+
+（3）英文单位若不翻译，单位前的阿拉伯数字与单位符号之间，应留出适当的空隙。
+123例1：一部容量为 16 GB 的智能手机例2：1 h = 60 min = 3,600 s
+
+（4）半角英文字符和半角阿拉伯数字，与全角标点符号之间不留空格。
+123错误：他的电脑是 MacBook Air 。正确：他的电脑是 MacBook Air。
+
+句子（1）避免使用长句。
+不包含任何标点符号的单个句子，或者以逗号分隔的句子构件，长度尽量保持在 20 个 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/18/writing-throry/paragraph/" title="段落">段落</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-18T07:23:46.000Z" title="发表于 2023-09-18 15:23:46">2023-09-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%84%E8%8C%83%E5%8F%82%E8%80%83/">中文技术文档的写作规范参考</a></span></div><div class="content">段落原则
+一个段落只能有一个主题，或一个中心句子。
+段落的中心句子放在段首，对全段内容进行概述。后面陈述的句子为核心句服务。
+一个段落的长度不能超过七行，最佳段落长度小于等于四行。
+段落的句子语气要使用陈述和肯定语气，避免使用感叹语气。
+段落之间使用一个空行隔开。
+段落开头不要留出空白字符。
+
+引用引用第三方内容时，应注明出处。
+1One man’s constant is another man’s variable. — Alan Perlis
+
+如果是全篇转载，请在全文开头显著位置注明作者和出处，并链接至原文。
+1本文转载自 WikiQuote
+
+使用外部图片时，必须在图片下方或文末标明来源。
+1本文部分图片来自 Wikipedia
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/09/17/writing-throry/number/" title="数值">数值</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-17T07:23:46.000Z" title="发表于 2023-09-17 15:23:46">2023-09-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%84%E8%8C%83%E5%8F%82%E8%80%83/">中文技术文档的写作规范参考</a></span></div><div class="content">数值半角数字阿拉伯数字一律使用半角形式，不得使用全角形式。
+123错误：这件商品的价格是１０００元。正确：这件商品的价格是 1000 元。
+
+千分号数值为千位以上，应添加千分号（半角逗号）。
+1XXX 公司的实收资本为 ￥1,258,000 人民币。
+
+对于 4 位的数值，千分号是选用的，比如1000和1,000都可以接受。对于 4 位以上的数值，应添加千分号。
+货币货币应为阿拉伯数字，并在数字前写出货币符号，或在数字后写出货币中文名称。
+12$1,0001,000 美元
+
+英文的货币名称，建议参考国际标准 ISO 4217。
+数值范围表示数值范围时，用波浪线（～）或一字线（—）连接。参见《标点符号》一节的“连接号”部分。
+带有单位或百分号时，两个数字建议都要加上单位或百分号。
+123132 kg～234 kg67%～89%
+
+变化程度的表示法数字的增加要使用“增加了”、“增加到”。“了”表示增量，“到”表示定量。
+12345增加到过去的两倍（过去为一，现在为二）增加了两倍（过去为一，现在为三）
+
+数字的减少要使用“降低了”、“降低到”。“了”表示增量，“到”表示定量。
+12345降低 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/5/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">李肇阳 | Zhaoyang Li</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div><div class="sticky_layout"><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/"><span class="card-category-list-name">Python学习与实践</span><span class="card-category-list-count">15</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/GUI/"><span class="card-category-list-name">GUI</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"><span class="card-category-list-name">学习总结</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/%E8%84%9A%E6%9C%AC/"><span class="card-category-list-name">脚本</span><span class="card-category-list-count">5</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%93%E5%88%A9%E4%B8%8E%E8%AE%A4%E8%AF%81%E4%BB%8B%E7%BB%8D/"><span class="card-category-list-name">专利与认证介绍</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%99%E4%BD%9C%E7%90%86%E8%AE%BA%E5%8F%82%E8%80%83/"><span class="card-category-list-name">中文技术文档的写作理论参考</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%84%E8%8C%83%E5%8F%82%E8%80%83/"><span class="card-category-list-name">中文技术文档的写作规范参考</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%A3/"><span class="card-category-list-name">关于产品文档</span><span class="card-category-list-count">7</span></a></li>
+            </ul></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By 李肇阳 | Zhaoyang Li</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>技术文档工程师修炼</title><meta name="author" content="李肇阳 | Zhaoyang Li"><meta name="copyright" content="李肇阳 | Zhaoyang Li"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="技术文档工程师修炼">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="技术文档工程师修炼">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="李肇阳 | Zhaoyang Li">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '技术文档工程师修炼',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-08-06 14:49:13'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="//"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="技术文档工程师修炼"><span class="site-name">技术文档工程师修炼</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="//"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">技术文档工程师修炼</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/06/certification-patent/patent/" title="专利">专利</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-06-05T16:00:00.000Z" title="发表于 2024-06-06 00:00:00">2024-06-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%93%E5%88%A9%E4%B8%8E%E8%AE%A4%E8%AF%81%E4%BB%8B%E7%BB%8D/">专利与认证介绍</a></span></div><div class="content">专利的类型专利的类型包括发明专利、实用新型专利、外观设计专利。
+
+发明，是指对产品、方法或者其改进所提出的新的技术方案。其中，产品发明是人们通过研究开发出来的关于各种新产品、新材料、新物质的技术方案；方法发明是人们为制造产品或解决某个技术课题而研究开发出来的操作方法、制造方法以及工艺流程等技术方案。
+
+实用新型，是指对产品的形状、构造或者其结合所提出的适用于实用的新的技术方案。
+
+外观设计，是指对产品的形状、图案或者其结合以及色彩与形状、图案的结合所作出的富有美感并适用于工业应用的新设计。
+
+
+对于发明和实用新型而言，最基本的条件是必须具备新颖性和创造性，简而言之，新颖性是指发明创造与现有技术具有不同点，创造性是指上述不同点对于本领域的技术人员来讲是不容易想到的；对于外观设计而言，最基本的条件是与已有的外观设计不相同或相近似。
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/06/certification-patent/certification/" title="产品认证">产品认证</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-06-05T16:00:00.000Z" title="发表于 2024-06-06 00:00:00">2024-06-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%B8%93%E5%88%A9%E4%B8%8E%E8%AE%A4%E8%AF%81%E4%BB%8B%E7%BB%8D/">专利与认证介绍</a></span></div><div class="content">产品认证介绍为什么需要产品认证？产品认证是指通过独立机构对产品质量、安全性、环保性等方面进行评估和验证，确保产品符合特定的标准和法规要求。产品认证不仅有利于提升消费者对产品的信任度，还能够帮助企业进入新市场、降低产品风险、遵守法律法规等。
+主要原因包括：
+保证产品质量和安全性：认证标志是产品质量和安全性的保证，消费者可以放心购买和使用。
+
+满足法律法规要求：许多国家和地区对特定类型的产品有强制性认证要求，没有认证可能无法进入市场或面临法律风险。
+
+提升市场竞争力：有认证的产品能够在市场上与竞争对手区分开来，提升品牌形象和市场份额。
+
+降低产品召回和责任风险：认证有助于发现和解决产品设计或生产过程中的问题，减少产品召回和法律责任风险。
+
+
+常见的产品认证以下是一些常见的产品认证类型：
+
+ISO认证系列：如ISO 9001（质量管理体系）、ISO 14001（环境管理体系）等，适用于各类组织和产品，确保符合国际标准要求。
+
+CE认证：适用于进入欧盟市场的产品安全认证，确保产品符合欧盟的基本健康与安全要求。
+
+FCC认证：美国联邦通信委员会的认证，用于电子产品的电磁兼容性和射频发射特性。
+
+ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/03/20/writing-throry/antora/" title="基于Antora的文档框架说明">基于Antora的文档框架说明</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta-separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-03-19T16:00:00.000Z" title="发表于 2024-03-20 00:00:00">2024-03-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%A3/">关于产品文档</a></span></div><div class="content">文档架构说明
+Antora是一个开源的文档生成工具，专注于构建技术文档。它使用 AsciiDoc 作为其主要的标记语言，并结合 Git 作为版本控制系统，提供了强大的文档管理和协作功能。
+具体来说，这套系统的组成部分如下：
+
+Antora：
+
+Antora 是一个基于 Node.js 的静态站点生成器，专门用于构建技术文档。它允许你从多个源（如 Git 仓库）收集文档内容，并根据配置生成一个完整的静态网站。
+Antora 支持模块化的文档结构，可以将文档分解为多个独立的模块（或组件），每个模块都有自己的版本控制和发布流程。
+Antora 使用 AsciiDoc 作为默认的标记语言，AsciiDoc 是一种功能强大的文档标记语言，支持结构化内容、内部链接、图表和代码示例等丰富的功能。
+
+
+AsciiDoctor：
+
+AsciiDoctor 是一个开源的文档处理器，用于将 AsciiDoc 标记转换为各种输出格式，包括 HTML、PDF 和 ePub 等。它是 Antora 使用的默认渲染引擎，负责将 AsciiDoc 标记转换为静态网页。
+
+
+Git：
+
+Git 是一个分布式版本控制系统 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/03/10/writing-throry/git/" title="Git常用指令">Git常用指令</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta-separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-03-09T16:00:00.000Z" title="发表于 2024-03-10 00:00:00">2024-03-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%A3/">关于产品文档</a></span></div><div class="content">
+git init ：在当前目录下初始化一个新的 Git 仓库。
+git clone &lt;repository-url&gt; ：克隆远程仓库到本地计算机。
+git add &lt;file(s)&gt; ：将文件添加到暂存区，准备提交到版本库。
+git commit -m “commit message” ：提交暂存区的文件到版本库，并附上提交说明。
+git status ：显示工作目录和暂存区的状态，查看哪些文件被修改或是已经准备好被提交。
+git diff ：显示工作目录中当前文件与暂存区文件的差异。
+git log ：显示提交日志，列出当前分支的所有提交记录。
+git pull ：从远程仓库拉取最新内容并合并到本地分支。
+git push ：将本地分支的更新推送到远程仓库。
+git branch ：列出本地分支，显示当前分支以及其他分支的信息。
+git branch &lt;branch-name&gt; ：创建一个新的分支。
+git branch -d &lt;branch-name&gt; ：删除指定的本地分支。
+git branch -D &lt;branch-nam ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/03/10/writing-throry/tools/" title="技术文档写作中常用的工具">技术文档写作中常用的工具</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta-separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-03-09T16:00:00.000Z" title="发表于 2024-03-10 00:00:00">2024-03-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%A3/">关于产品文档</a></span></div><div class="content">以下工具均为Web端工具，使用Web端工具可以跨平台且无需本地安装。
+多媒体
+Figma：https://www.figma.com/ 
+  Figma是一款用于产品设计的平台，但其也可用于设计、制作、存储、管理技术文档中的插图，并且可以实现多人协作。
+
+MasterGo：https://mastergo.com/ 
+  国产类Figma平台
+
+查图：https://www.pinterest.com/
+
+
+翻译
+Google翻译： https://translate.google.com/
+DeepL：https://www.deepl.com/zh/
+英文语法检查：https://app.grammarly.com/
+
+其他
+ChatGPT: https://chat.openai.com/
+PDF处理： https://www.ilovepdf.com/zh-cn
+PDF转PNG: https://pdf2png.com/zh/
+图片文字处理：https://web.baimiaoapp.com/
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/01/08/python-scripts/antora-gui/" title="基于Aantora文档的GUI工具">基于Aantora文档的GUI工具</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-07T16:00:00.000Z" title="发表于 2024-01-08 00:00:00">2024-01-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/">Python学习与实践</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/GUI/">GUI</a></span></div><div class="content">最终实现效果
+
+
+前端GUI 界面使用 Python 中的 tkinter 库实现。
+后端</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/04/video-animation/hexoblog/" title="Hexo + Github 搭建博客教程">Hexo + Github 搭建博客教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-04T07:23:46.000Z" title="发表于 2023-12-04 15:23:46">2023-12-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%A7%86%E9%A2%91%E4%B8%8E%E5%8A%A8%E7%94%BB/">视频与动画</a></span></div><div class="content">Hexo + Github 搭建博客教程（上） 
+
+
+Hexo + Github 搭建博客教程（中） 
+
+
+
+
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/04/video-animation/step/" title="做视频的思路">做视频的思路</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-04T07:23:46.000Z" title="发表于 2023-12-04 15:23:46">2023-12-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%A7%86%E9%A2%91%E4%B8%8E%E5%8A%A8%E7%94%BB/">视频与动画</a></span></div><div class="content">思路
+先确定视频的【目的】，明确【视频类型】，例如市场宣传、功能简介、操作详解等。
+
+头脑风暴罗列一下视频里面要传递的信息，做一个【信息列表】。这个阶段可以先发散再删减，列的时候先不用考虑章节结构。这个信息列表再根据【重要性】和【依赖关系】，经过删减，把要传递的信息整理成一个树状关系。如果发现信息太多，很可能进一步删减或者需要拆成多个视频。
+
+画视频的【思维导图】：视频的章节结构，每个部分要讲哪些信息。对照信息列表，看看是不是覆盖了。
+
+从思维导图，出【解说词】，然后是【分镜头】，解说词和分镜头很可能需要来回修改，但是解说词优先级更高。
+
+对着解说词和分镜头草稿，人工讲一下，类似讲ppt，这个过程很可能发现有地方不对劲，就需要向前回溯修改。
+
+最后再剪辑视频。
+
+
+示例下图是一个本地部署hexo的思维导图，用于总结视频的结构、词稿、分镜等。
+
+
+
+
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/11/27/python-scripts/exercise-file-value/" title="从文件中读取一个变量">从文件中读取一个变量</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-26T16:00:00.000Z" title="发表于 2023-11-27 00:00:00">2023-11-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/">Python学习与实践</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/%E8%84%9A%E6%9C%AC/">脚本</a></span></div><div class="content">需求将变量写在一个文件中，脚本每次读取文件中的变量进行处理。
+代码12345678910111213141516171819# 读取文件file_path = &#x27;input.txt&#x27;try:    with open(file_path, &#x27;r&#x27;) as file:        # 从文件中读取变量        variable_to_process = file.read()        print(f&quot;从文件中读取的变量值为: &#123;variable_to_process&#125;&quot;)        # 在这里可以对变量进行处理        # ...except FileNotFoundError:    print(f&quot;找不到文件: &#123;file_path&#125;&quot;)except Exception as e:    print(f&quot;发生了错误: &#123;e&#125;&quot;)
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">李肇阳 | Zhaoyang Li</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div></div><div class="sticky_layout"><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/"><span class="card-category-list-name">Python学习与实践</span><span class="card-category-list-count">15</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/GUI/"><span class="card-category-list-name">GUI</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"><span class="card-category-list-name">学习总结</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%AE%9E%E8%B7%B5/%E8%84%9A%E6%9C%AC/"><span class="card-category-list-name">脚本</span><span class="card-category-list-count">5</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%93%E5%88%A9%E4%B8%8E%E8%AE%A4%E8%AF%81%E4%BB%8B%E7%BB%8D/"><span class="card-category-list-name">专利与认证介绍</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%99%E4%BD%9C%E7%90%86%E8%AE%BA%E5%8F%82%E8%80%83/"><span class="card-category-list-name">中文技术文档的写作理论参考</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AD%E6%96%87%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%99%E4%BD%9C%E8%A7%84%E8%8C%83%E5%8F%82%E8%80%83/"><span class="card-category-list-name">中文技术文档的写作规范参考</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%A3/"><span class="card-category-list-name">关于产品文档</span><span class="card-category-list-count">7</span></a></li>
+            </ul></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By 李肇阳 | Zhaoyang Li</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
